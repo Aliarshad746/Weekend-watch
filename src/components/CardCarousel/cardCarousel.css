@@ -1,0 +1,48 @@
+.card-carousel-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.card-btn-carousel {
+    all: unset;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 2;
+
+    &.right {
+        right: 0;
+    }
+}
+
+.card-btn-carousel > *:hover{
+    background-color: rgba(123, 121, 121, 0.378);
+}
+
+.card-btn-carousel > * {
+    color: #000000;
+    background: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.carousel-card-list-container{
+    position: absolute;
+    display: block;
+    height: 100%;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    scroll-behavior: smooth;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+}

@@ -1,0 +1,37 @@
+.form-container{
+    width: 80%;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    object-fit: contain;
+    padding: 3px;
+}
+
+.form-container > input {
+    flex-grow: 0.9;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+
+.form-container > button {
+    all: unset;
+    display: block;
+    height: 100%;
+    flex-grow: 0.1;
+    background-color: #EC2227;
+    text-align: center;
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .form-container{
+        width: 100%;
+    }
+}

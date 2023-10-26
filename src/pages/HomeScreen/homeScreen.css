@@ -1,0 +1,64 @@
+.carousel-home{
+    width: 100%;
+    height: 448px;
+    margin: 0 auto;
+}
+
+.popular{
+    padding: 40px 50px;
+}
+
+.popular-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.popular-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.tabs {
+    height: 100%;
+    width: 200px;
+    background-color: #e3e3e3;
+    display: flex;
+    gap: 5px;
+    border-radius: 50px;
+}
+
+.tab{
+    all: unset;
+    display: block;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+    border-radius: inherit;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+    
+    &.active{
+        color: #ffffff;
+        background: #EC2227;
+    }
+}
+
+.tab:not(.active):hover{
+    background-color: #afaeae;
+
+}
+
+.carousel-card{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 500px){
+    .popular-header{
+        flex-direction: column;
+    }
+}
