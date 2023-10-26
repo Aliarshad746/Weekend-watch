@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState} from "react";
 import { REQUESTS } from "../utils/apiConfig";
 import axiosInstance from "../utils/axiosInstance";
 
