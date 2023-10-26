@@ -8,6 +8,10 @@ function HomeCarousel({ dataItems = [] }) {
   const [imageIndex, setImageIndex] = useState(0);
   const navigate = useNavigate();
 
+/* 
+  Logic to scroll multiple banners on button click
+*/
+
   const handleMove = (btnType) => {
     if (btnType === "left") {
       setImageIndex((prev) => {
@@ -17,7 +21,6 @@ function HomeCarousel({ dataItems = [] }) {
       });
     } else {
       setImageIndex((prev) => {
-        console.log(prev);
         if (+prev >= dataItems?.length - 1) return 0;
 
         return +prev + 1;

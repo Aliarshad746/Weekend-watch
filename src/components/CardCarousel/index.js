@@ -5,6 +5,7 @@ import "./cardCarousel.css"
 function CardCarousel({dataItems = []}) {
     const ref = useRef(null);
 
+    // logic to scroll list of movies / tv shows horizontally on button click
     const handleMove = (type) => {
         const box = ref.current;
         const width = box.clientWidth;

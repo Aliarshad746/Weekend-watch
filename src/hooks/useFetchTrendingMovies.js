@@ -14,6 +14,8 @@ const useFetchTrendingMovies = () => {
     }
   };
 
+  // Formatting data and getting list of trending movies and tv shows form data
+  
   const { trendingMovies = [], trendingShows = [], bannerData = [] } = useMemo(() => {
     if(data?.length > 0){
        return  (data || []).reduce(

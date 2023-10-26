@@ -12,8 +12,6 @@ function HomeScreen() {
     bannerData = [],
   } = useFetchTrendingMovies();
 
-  console.log({ trendingMovies, trendingShows, bannerData });
-
   return (
     <div>
       <div className="carousel-home">

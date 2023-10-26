@@ -8,6 +8,11 @@ function Searchbar({
 }) {
   const [searchValue, setSearchValue] = useState(searchQuery);
 
+/* 
+  whenever form is submitted its values is passed to a callback funtion
+  we can use this form value outside component with the help of its calback function.
+*/
+
   const submitHandler = (e) => {
     e.preventDefault();
     if (!searchValue) {

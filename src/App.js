@@ -5,6 +5,10 @@ import Navbar from "./components/Navbar";
 import HomeScreen from "./pages/HomeScreen";
 import Search from "./pages/Search";
 
+/* 
+  In This File we can add many routes
+*/
+
 function App() {
   return (
     <div className="app">
